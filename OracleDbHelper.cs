@@ -163,8 +163,8 @@ namespace Utils
         /// <returns>打开的数据库连接</returns>
         public static OracleConnection OpenConn()
         {
-            OracleConnection conn = new OracleConnection(); //"Data Source = (DESCRIPTION =\n(ADDRESS_LIST =\n(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.57.9)(PORT = 1521))\n)\n(CONNECT_DATA =\n(SERVER = DEDICATED)\n(SERVICE_NAME = mstr9)\n)\n); User Id = db_config; Password = lmis; "
-            conn.ConnectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=lmis_local)));Persist Security Info=True;User ID=lmis;Password=lmis6tsl;"; //
+            OracleConnection conn = new OracleConnection(); //"Data Source = (DESCRIPTION =\n(ADDRESS_LIST =\n(ADDRESS = (PROTOCOL = TCP)(HOST = xxx.xxx.xxx.xxx)(PORT = xxx))\n)\n(CONNECT_DATA =\n(SERVER = DEDICATED)\n(SERVICE_NAME = mstr9)\n)\n); User Id = xxx; Password = xxx; "
+            conn.ConnectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=xxx))(CONNECT_DATA=(SERVICE_NAME=xxx)));Persist Security Info=True;User ID=xxx;Password=xxx;"; //
             conn.Open();
             return conn;
         }
