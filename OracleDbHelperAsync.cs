@@ -210,9 +210,9 @@ namespace Utils
         /// <returns>打开的数据库连接</returns>
         public static async Task<OracleConnection> OpenConnAsync()
         {
-            OracleConnection conn = new OracleConnection(); //"Data Source = (DESCRIPTION =\n(ADDRESS_LIST =\n(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.57.9)(PORT = 1521))\n)\n(CONNECT_DATA =\n(SERVER = DEDICATED)\n(SERVICE_NAME = mstr9)\n)\n); User Id = db_config; Password = lmis; "
+            OracleConnection conn = new OracleConnection(); //"Data Source = (DESCRIPTION =\n(ADDRESS_LIST =\n(ADDRESS = (PROTOCOL = TCP)(HOST = xxx.xxx.xxx.xxx)(PORT = xxxx))\n)\n(CONNECT_DATA =\n(SERVER = DEDICATED)\n(SERVICE_NAME = xxx)\n)\n); User Id = xxxx; Password = xxx; "
             conn.ConnectionString =
-                "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=lmis_local)));Persist Security Info=True;User ID=lmis;Password=lmis6tsl;";
+                "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=xxxx))(CONNECT_DATA=(SERVICE_NAME=xxxx)));Persist Security Info=True;User ID=xxxx;Password=xxxx;";
             await conn.OpenAsync();
             return conn;
         }
